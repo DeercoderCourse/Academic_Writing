@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\title{02.507 Academic Writing Homework 7}
+%\setlength{\parindent}{4em}
+%\setlength{\parskip}{1em}
+%\renewcommand{\baselinestretch}{1.0}
+
+\author{Chang Liu ~\\ chang\_liu@student.uml.edu} 
+
+\begin{document}
+
+\maketitle
+
+\section{Problem}
+
+Write an abstract, either structured or unstructured is OK.
+
+\section{Writing}
+
+I will use the unstructured way to organize the abstract, as follows: ~\\
+
+\large{
+
+\noindent \textbf{Abstract:} ~\\
+
+Deep learning is a very effective method for image classification and object detection. Nowadays more and more researchers are putting their effort on large data with many complex structures for the neural network, as the most recent state-of-art work shows that large dataset and complex structure will improve the accuracy for prediction. In this paper, we are going to argue that the prediction accuracy is not so closely with the data set size and structural complexity. Actually, according to our experiment result, when hitting the edge point of data set size, the accuracy will remain steady and stable. The complexity of system is also related with the training data set, which means that when the data set size is fixed, increasing the complexity of network will not affect the accuracy so much to some extend. To build our system, we used deep learning framework Caffe to train several neural networks, which is running on Nvidia GPU K40c with 24GB memory using ImageNet 100k image data set. Our system pre-trained the model using 3-layer, 5-layer, 7-layer and 11-layer structures with the same dataset to explore the relationship between structural complexity and accuracy. Then we use the fixed structure and pre-trained the model with different size of data to explore the relationship between the data size and accuracy. Our result indicates that the size of data is overrated and the research in current deep learning area is not so efficient without considering the reasonable model structure and proper data set size. At last, we proposed a practical function to evaluate the data set size and structure complexity so that researchers can get proper parameters for their training. We also leave some open questions in the conclusion that highlights the limitation of our result in some specific areas and these problems needs to be carefully studied in the future to consummate our conclusion.
+
+~\\
+\textbf{Key word}: Deep Learning, Neural Network, Image Classifcation
+
+
+
+}
+
+
+
+\end{document}

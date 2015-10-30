@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\title{02.507 Academic Writing Homework IV}
+%\setlength{\parindent}{4em}
+%\setlength{\parskip}{1em}
+%\renewcommand{\baselinestretch}{1.0}
+
+\author{Chang Liu ~\\ chang\_liu@student.uml.edu} 
+
+\begin{document}
+
+\maketitle
+
+\section{Problem}
+
+Find the best introduction and conclusion from the same paper among the numerous papers you read, explain why or why not they are good.
+
+
+\section{Reference}
+
+The following parts are excerpted from the paper ``Going deep with convolution''.
+
+\subsection{Inroduction}
+
+In the last three years, our object classification and detection
+capabilities have dramatically improved due to advances
+in deep learning and convolutional networks [10].
+One encouraging news is that most of this progress is not
+just the result of more powerful hardware, larger datasets
+and bigger models, but mainly a consequence of new ideas,
+algorithms and improved network architectures. No new
+data sources were used, for example, by the top entries
+in the ILSVRC 2014 competition besides the classification
+dataset of the same competition for detection purposes. Our
+GoogLeNet submission to ILSVRC 2014 actually uses 12
+times fewer parameters than the winning architecture of
+Krizhevsky et al [9] from two years ago, while being significantly
+more accurate. On the object detection front, the
+biggest gains have not come from naive application of bigger 
+and bigger deep networks, but from the synergy of deep
+architectures and classical computer vision, like the R-CNN
+algorithm by Girshick et al [6].
+
+
+Another notable factor is that with the ongoing traction
+of mobile and embedded computing, the efficiency of our
+algorithms – especially their power and memory use – gains
+importance. It is noteworthy that the considerations leading
+to the design of the deep architecture presented in this paper
+included this factor rather than having a sheer fixation on
+accuracy numbers. For most of the experiments, the models
+were designed to keep a computational budget of 1.5 billion
+multiply-adds at inference time, so that the they do not end
+up to be a purely academic curiosity, but could be put to real
+world use, even on large datasets, at a reasonable cost.
+
+
+In this paper, we will focus on an efficient deep neural
+network architecture for computer vision, codenamed Inception,
+which derives its name from the Network in network
+paper by Lin et al [12] in conjunction with the famous
+“we need to go deeper” internet meme [1]. In our case, the
+word “deep” is used in two different meanings: first of all,
+in the sense that we introduce a new level of organization
+in the form of the “Inception module” and also in the more
+direct sense of increased network depth. In general, one can
+view the Inception model as a logical culmination of [12]
+while taking inspiration and guidance from the theoretical
+work by Arora et al [2]. The benefits of the architecture are
+experimentally verified on the ILSVRC 2014 classification
+and detection challenges, where it significantly outperforms
+the current state of the art.
+
+\subsection{Conclusion}
+
+Our results yield a solid evidence that approximating the
+expected optimal sparse structure by readily available dense
+building blocks is a viable method for improving neural networks
+for computer vision. The main advantage of this
+method is a significant quality gain at a modest increase
+of computational requirements compared to shallower and
+narrower architectures.
+
+Our object detection work was competitive despite not
+utilizing context nor performing bounding box regression,
+suggesting yet further evidence of the strengths of the Inception
+architecture.
+
+For both classification and detection, it is expected that
+similar quality of result can be achieved by much more expensive
+non-Inception-type networks of similar depth and
+width. Still, our approach yields solid evidence that moving
+to sparser architectures is feasible and useful idea in
+general. This suggest future work towards creating sparser
+and more refined structures in automated ways on the basis
+of [2], as well as on applying the insights of the Inception
+architecture to other domains.
+
+
+\section{My Review}
+
+\subsection{For Introduction}
+{\large	
+
+This introduction has a very clear description about the problem that is most concerned in deep learning. In the beginning, the paragraph points out the current trend in deep learning, which is the synergy of deep architecture and classical computer vision. Instead of more powerful hardware and larger dataset, more and more efforts have been put into the new ideas, algorithms and improved network architectures. Then another research focus is put forward in the second paragraph, emphasising on the factor of the efficiency of algorithms, especially the power and memory use. By stating the statistic data, the feasibility in real world is proposed and the huge advantage of their approach over other methods is shown by this comparison. At last the specific purpose, method and result are given, with some review of the related work and their method as well as the comparable experimental result. Overall I think the structure for this introduction is very clear, varying from the two important general factors in current deep learning field to the summary of their proposed approach and related work as well as experimental result.
+
+On the other hand, this introduction also contains many essential aspects for a good introduction. For example, the first paragraph reveals the background information for this research topic. And then related work is also proposed to show the state-of-art method in this topic. After that their methods and results are also stated with many technical details. These components all consist the essential parts for a good introduction. However, if I were the author of this paper, I will give more detailed descriptions about some definitions of key term and mention some limitations of this approach to form a complete cover for the whole topic, but overall I think this introduction is well-written and it's worth learning.
+
+}
+
+
+\subsection{For Conclusion}
+
+{\large
+
+The first two paragraphs summarize their work towards this research topic, showing the main advantage of their method and the reason behind it. Furthermore, an assumption for sparser network's feasibility is discussed in the last paragraph, which proves their extendibility to much more complex network in real world, thus indicating the future work in creating sparser structures in automated way as well as applications in other domain. I think this conclusion is not so good comparing with the introduction, because its content is not so full and accurate. Based on the consideration of general-to-specific rule, I think the beginning of the conclusion should be more general and a review of main points in the study should be proposed to form a whole view of this research topic. Currently, this conclusion focus too much on the result of their experiment, but I think we can dig more in this part and form a stronger conclusion. However, for this paper, it's still clear to have a basic idea of their experiment, its influence and the application in industry, so I think it's acceptable for this introduction.
+
+}
+
+
+\subsection{Summary}
+
+{\large
+
+By reviewing the introduction and conclusion in this paper, I grasped the main idea of their research, which means that they're convincing and well-structured. Furthermore, I applied what I learned about the basic structure for a thesis, for example, the general-to-specific rule from the introduction to conclusion, then I find that most of the contents meet the requirement. In addition, other essential components for a good introduction and conclusion are also checked to verify its correctness. Based on all my observations and understandings, I think this is the best one among all the papers that I read.
+
+}
+
+\end{document}
